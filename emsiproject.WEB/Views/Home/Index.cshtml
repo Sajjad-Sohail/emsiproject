@@ -1,0 +1,55 @@
+﻿@model emsiproject.WEB.ViewModels.Index_ViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+
+}
+ 
+<form asp-action="Index">
+     
+    <br /><br />
+          <div class="row pb-3">
+                <div class="heroHome-2__cont font-weight-bold">
+                      Welcome to
+                      <h3 class="logoInText pb-2">Geography Lookup</h3> <h6>Search States, Counties, and various Cities across America.</h6>
+                </div>
+          </div>
+          <div class=" row pb-4 ">
+                <div class="col-2">
+                    <label>Enter a keyword:</label>
+                </div>
+                <div class="col-8">
+                    <input type="text" asp-for="search_predicate" placeholder="Example:Utah,Springdate" id="search_box" class="form-control mb-3" />
+                    <input type="hidden" id="hfCount" name="CountryID" />
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-green" type="submit" name="submit" value="submit">Look Up</button>
+                </div>
+          </div>
+          <div class="row">
+                 <table class="table table-bordered table-striped ">
+                  <thead>
+                    <tr class="text-center">
+                        <th>Name</th>
+                        <th>Abbreviation</th>
+                    </tr>
+                  </thead>
+                <tbody>
+                    @if (Model.AreaList != null && Model.AreaList.Count > 0)
+                    {
+                        @foreach (var item in Model.AreaList)
+                        {
+                            <tr class="text-center">
+                                <td>@item.name</td>
+                                <td>@item.abbr</td>
+                            </tr>
+                        }
+                    }
+
+                </tbody>
+            </table>
+            </div>
+    <br /><br />
+   
+</form>
+ 

@@ -1,0 +1,117 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+ 
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+.btn-green {
+    --bg-opacity: 1;
+    background-color: #41d592;
+    background-color: rgba(65, 213, 146, var(--bg-opacity));
+    --text-opacity: 1;
+    color: #204354;
+    color: rgba(32, 67, 84, var(--text-opacity));
+}
+    .btn-green:hover {
+        background-color: #8dd9b6;
+    }
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding-top: 0.625rem;
+    padding-bottom: 7.5px;
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
+    font-size: 0.75rem;
+    border-radius: 0.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition-duration: 200ms;
+}
+.container-fluid {
+    overflow: hidden;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    font-family: "Sailec", sans-serif;
+    --text-opacity: 1;
+    color: #204354;
+    color: rgba(32, 67, 84, var(--text-opacity));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.625;
+}
+.background-image {
+    height: 100vh;
+    width: 100vw;
+   
+    z-index: -1;
+    background: linear-gradient( 180deg,#013766,#0bc9e3 132.49%);
+    background-color: #013766;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+.btn-blue {
+    --bg-opacity: 1;
+    background-color: #5c59ed;
+    background-color: rgba(92, 89, 237, var(--bg-opacity));
+    --text-opacity: 1;
+    color: #fff;
+    color: rgba(255, 255, 255, var(--text-opacity));
+}
