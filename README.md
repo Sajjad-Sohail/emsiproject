@@ -69,8 +69,9 @@ To do this, right click on the solution, click properties, expand Common Propert
 
 PENDING WORK
 1)	Display all the areas into categories as Counties, States and Cities.
-2)	Add self-signed TLS/SSL self-signed certificate.
-3)	Make application ready to run on Ubuntu (Docker).
+2)	Finish all the tests
+3)	Add self-signed TLS/SSL self-signed certificate.
+4)	Make application ready to run on Ubuntu (Docker).
 
 FUTURE IMPROVEMENTS
 
